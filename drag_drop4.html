@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drag_drop4</title>
+    <link rel="stylesheet" href="./drag_drop4.css">
+</head>
+
+<body>
+    <!-- <audio id="zvyk">
+        <source src="nazhatie-knopki-zapuska-lunohoda.mp3">
+  </audio> -->
+
+
+    <audio class="sound_error">
+        <source src="./sound_error.mp3">
+    </audio>
+<div class="fon none"></div>
+<div class="transparent_fon none"></div>
+    <div class="container">
+        <div class="selected">
+
+        </div>
+        <div class="wrap_popups">
+            <div class="popup none">
+                <p>элемент уже добавлен</p>
+                <button class="ok">ok</button>
+            </div>
+            <div class="popup2 none">
+                <p>удалить?</p>
+                <div class="wrap_buttons">
+                    <button class="yes">да</button>
+                    <button class="no">нет</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_basket">
+            <div class="basket"></div>
+        </div>
+        <div class="elements">
+            <div class="wrap_img">
+                <img src="./img/k1.jpg" alt="" draggable="true" id="0">
+            </div>
+            <div class="wrap_img">
+                <img src="./img/k2.jpg" alt="" draggable="true" id="1">
+            </div>
+            <div class="wrap_img">
+                <img src="./img/k3.jpg" alt="" draggable="true" id="2">
+            </div>
+            <div class="wrap_img">
+                <img src="./img/k4.jpg" alt="" draggable="true" id="3">
+            </div>
+            <div class="wrap_img">
+                <img src="./img/k5.jpg" alt="" draggable="true" id="4">
+            </div>
+            <div class="wrap_img">
+                <img src="./img/k6.jpg" alt="" draggable="true" id="5">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/drag_drop4.js"></script>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+:root{
+    --del_el_top:0;
+    --del_el_left:0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+.del_el{
+    position: fixed;
+    top: var(--del_el_top);
+    left: var(--del_el_left);
+    rotate: 360deg;
+    transition: 1s;
+    width: 100px;
+    height: 100px;
+} */
+
+.del_el{
+    top:0px;
+    left:0px;
+}
+
+.none{
+    display: none;
+}
+
+.fon{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,0,0,0.7);
+    z-index: 3;
+    /* display: none; */
+}
+
+.transparent_fon{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,0,0,0);
+    z-index: 1;
+    display: none;
+}
+
+.container{
+    position: relative;
+    width: 1000px;
+    height: fit-content;
+    border: 1px solid blue;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selected{
+    position: relative;
+    width: 100px;
+    height: fit-content;
+    /* height: 0; */
+    border: 5px solid red;
+}
+
+.first_el{
+    height: 100px;
+}
+
+.selected img{
+    width: 100px;
+}
+
+.elements{
+    width: 200px;
+    height: fit-content;
+    border: 5px solid green;
+}
+
+.elements img{
+    width: 200px;
+}
+
+.wrap_img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.wrap_img img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 1s;
+  
+}
+/* 
+img{
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+} */ 
+
+.wrap_img img:hover{
+    /* width: 120%;
+    height: 120%; */
+    scale: 1.2;
+    z-index: 2;
+}
+
+.wrap_popups{
+    position: relative;
+}
+
+
+
+.popup{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    /* display: none; */
+    margin-top: 50px;
+    padding-top: 40px;
+    text-align: center;
+    z-index: 4;
+}
+
+.popup button{
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+    background: green;
+}
+
+.popup2{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: red;
+    /* display: none; */
+    /* margin-top: 50px; */
+    padding-top: 40px;
+    text-align: center;
+    z-index: 4;
+}
+
+.yes,.no{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.wrap_basket{
+    position: absolute;
+    top: 300px;
+    right: 250px;
+    border: 3px solid #0000ff;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #0000ff;
+}
+
+.basket img{
+    width: 100px;
+}
+
+@keyframes u-turn{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.selected img{
+    animation-name: u-turn;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    height: auto;
+}
